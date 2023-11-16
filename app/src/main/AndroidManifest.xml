@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".inicio"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".registro"/>
+        <activity android:name=".iniciosesion"/>
+        <activity android:name=".feed"/>
+        <activity android:name=".logicachat"/>
+        <activity android:name=".detalles"/>
+        <activity android:name=".edit"/>
+        <activity android:name=".agregar"/>
+        <activity android:name=".mispubli"/>
+        <activity android:name=".perfil"/>
+        <activity android:name=".registrocomedor"/>
+        <activity android:name=".iniciosesioncomer"/>
+        <activity android:name=".feedcomedor"/>
+        <activity android:name=".logicachatcomedor"/>
+        <activity android:name=".detallescomedor"/>
+        <activity android:name=".editcomedor"/>
+        <activity android:name=".agregarcomedor"/>
+        <activity android:name=".mispublicomedor"/>
+        <activity android:name=".perfilcomedor"/>
+
+
+
+
+    </application>
+
+</manifest>
