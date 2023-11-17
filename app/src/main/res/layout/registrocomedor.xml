@@ -4,27 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFE8D6"
     tools:context=".registro"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="41dp">
 
-
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sadra"
-        android:textSize="28dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.076" />
-
-    <TextView
+        android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Registro"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,33 +23,11 @@
         app:layout_constraintVertical_bias="0.185" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nombre del Comedor"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.292" />
-
-    <EditText
-        android:id="@+id/usuarioEditText"
-        android:layout_width="369dp"
-        android:layout_height="51dp"
-        android:hint="Ej, Cuchilla del Tesoro"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.619"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35" />
-
-    <TextView
+        android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Correo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,22 +36,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.454" />
 
-    <EditText
-        android:id="@+id/emailEditText"
-        android:layout_width="369dp"
-        android:layout_height="51dp"
-        android:hint="example@ejemplo.com"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.619"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.516" />
-
     <TextView
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contraseña"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,8 +50,36 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.614" />
 
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Comedor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SADRA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076" />
+
     <EditText
-        android:id="@+id/passwordEditText"
+        android:id="@+id/passwordEditText2"
         android:layout_width="369dp"
         android:layout_height="51dp"
         android:hint="Ingresa tu contraseña"
@@ -104,31 +90,54 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.68" />
 
-    <Button
-        android:id="@+id/registro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registrate"
+    <EditText
+        android:id="@+id/usuarioEditText2"
+        android:layout_width="369dp"
+        android:layout_height="51dp"
+        android:hint="Ej, Comedor Comunitario Angeles"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintHorizontal_bias="0.619"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.812"
-        android:backgroundTint="@color/purple"/>
+        app:layout_constraintVertical_bias="0.35" />
 
     <Button
-        android:id="@+id/cancelar"
+        android:id="@+id/cancelar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#DDBEA9"
         android:text="Cancelar"
-        android:textColor="@color/purple"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintHorizontal_bias="0.82"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.812" />
 
+    <EditText
+        android:id="@+id/emailEditText2"
+        android:layout_width="369dp"
+        android:layout_height="51dp"
+        android:hint="example@ejemplo.com"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <Button
+        android:id="@+id/registro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CB997E"
+        android:text="Registrate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812" />
 </androidx.constraintlayout.widget.ConstraintLayout>

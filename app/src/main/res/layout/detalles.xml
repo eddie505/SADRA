@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="#FFE8D6">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Detalles de &quot;Nombre&quot;"
+        android:text="Detalles de la Publicación"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,52 +19,13 @@
         app:layout_constraintVertical_bias="0.09" />
 
     <TextView
-        android:id="@+id/especi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="500dp"
-        android:layout_marginEnd="272dp"
-        android:text="Especificaciones:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/soli"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="380dp"
-        android:layout_marginEnd="272dp"
-        android:text="Fecha de solicitud:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/cantidad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="440dp"
-        android:layout_marginEnd="272dp"
-        android:text="Cantidad:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/descripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="320dp"
-        android:layout_marginEnd="272dp"
+        android:layout_marginEnd="232dp"
         android:text="Descripción:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="320dp"
-        android:layout_marginEnd="175dp"
-        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,18 +34,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="440dp"
-        android:layout_marginEnd="175dp"
+        android:layout_marginEnd="136dp"
         android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/soli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="380dp"
-        android:layout_marginEnd="175dp"
-        android:text="TextView"
+        android:layout_marginEnd="232dp"
+        android:text="Fecha de solicitud:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -92,8 +56,53 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="500dp"
-        android:layout_marginEnd="175dp"
+        android:layout_marginEnd="136dp"
         android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/especi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="232dp"
+        android:text="Especificaciones:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="136dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_marginEnd="232dp"
+        android:text="Cantidad:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="136dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -101,7 +110,7 @@
         android:id="@+id/frut"
         android:layout_width="175dp"
         android:layout_height="175dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="104dp"
         android:layout_marginEnd="116dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -113,34 +122,38 @@
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="344dp"
+        android:background="#00FFFFFF"
         android:onClick="onClickIcono"
         android:scaleType="fitCenter"
+        android:src="@drawable/home"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/home" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/like"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="600dp"
-        android:layout_marginEnd="264dp"
+        android:layout_marginEnd="240dp"
+        android:background="#00775555"
         android:onClick="onClickIcono"
         android:scaleType="fitCenter"
+        android:src="@drawable/like"
+        android:tint="#FF0000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/like" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/enviar"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="600dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginEnd="136dp"
+        android:background="#00FFFFFF"
         android:onClick="onClickIcono"
         android:scaleType="fitCenter"
+        android:src="@drawable/enviar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/enviar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

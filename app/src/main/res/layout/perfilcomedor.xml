@@ -1,26 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <ImageView
-        android:id="@+id/frut"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="120dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.905"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/perfil" />
+    android:background="#FFE8D6">
 
     <TextView
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Comedor &quot;Nombre&quot;"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,86 +19,105 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.369" />
 
+    <Button
+        android:id="@+id/cancelar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DDBEA9"
+        android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.885" />
+
     <EditText
-        android:id="@+id/textView"
+        android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:layout_marginTop="320dp"
         android:layout_marginEnd="96dp"
-        android:text="Nombre del admin. del comedor"
+        android:text="Nombre del admin. del mercado"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/cantidad"
+    <EditText
+        android:id="@+id/editTextNumber3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="380dp"
-        android:layout_marginEnd="272dp"
-        android:text="Número de teléfono:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="370dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginEnd="96dp"
         android:ems="10"
         android:inputType="number"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="440dp"
-        android:layout_marginEnd="152dp"
-        android:text="Correo eléctronico"
-        android:textSize="15dp"
+    <ImageView
+        android:id="@+id/frut3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="120dp"
+        android:tint="#6B705C"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/perfil" />
 
     <EditText
-        android:id="@+id/textView3"
+        android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="500dp"
         android:layout_marginEnd="176dp"
         android:text="Ubicación"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <Button
-        android:id="@+id/cancelar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/purple"
-        android:text="Cancelar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.052"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
 
     <Button
-        android:id="@+id/terminar"
+        android:id="@+id/terminar3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/purple"
+        android:backgroundTint="#CB997E"
         android:text="Guardar cambios"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintHorizontal_bias="0.783"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintVertical_bias="0.885" />
+
+    <EditText
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_marginEnd="140dp"
+        android:text="Correo eléctronico"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cantidad3"
+        android:layout_width="62dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="280dp"
+        android:text="No. de teléfono:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
