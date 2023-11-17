@@ -21,6 +21,8 @@ public class agregarcomedor extends AppCompatActivity {
 
         Button cancel = findViewById(R.id.cancelar);
         ImageButton btnSubirFoto = findViewById(R.id.subir);
+        Button subir = findViewById(R.id.publi);
+
 
         btnSubirFoto.setOnClickListener(new View.OnClickListener() {
             @Override

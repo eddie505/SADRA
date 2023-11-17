@@ -91,7 +91,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/cancelar5"
+        android:id="@+id/publi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#CB997E"
@@ -104,7 +104,7 @@
         app:layout_constraintVertical_bias="0.95" />
 
     <Button
-        android:id="@+id/cancelar6"
+        android:id="@+id/cancelar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#CB997E"
@@ -128,7 +128,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/subir2"
+        android:id="@+id/subir"
         android:layout_width="124dp"
         android:layout_height="122dp"
         android:layout_marginTop="488dp"

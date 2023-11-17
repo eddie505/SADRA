@@ -10,7 +10,7 @@
     tools:layout_editor_absoluteY="41dp">
 
     <Button
-        android:id="@+id/iniciosesion2"
+        android:id="@+id/iniciosesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#CB997E"
@@ -21,6 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.812" />
+
 
     <TextView
         android:layout_width="wrap_content"
