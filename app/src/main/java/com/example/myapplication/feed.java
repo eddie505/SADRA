@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.content.Intent;
 import android.widget.Toast;
+import android.content.Intent;
 
 public class feed extends AppCompatActivity {
 
@@ -15,12 +15,23 @@ public class feed extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.feed);
 
+        // Obtener el nombre del extra
+        String nombreMercado = getIntent().getStringExtra("nombreMercado");
+
+        // Referenciar el TextView
+        TextView nombreTextView = findViewById(R.id.nombre);
+
+        // Verificar si el nombre del mercado no es nulo
+        if (nombreMercado != null) {
+            // Establecer el nombre en el TextView
+            nombreTextView.setText("Comedor '" + nombreMercado + "'");
+        }
+
         // Referenciar los elementos de la interfaz
         ImageButton enviar = findViewById(R.id.env);
         ImageButton mns = findViewById(R.id.mns);
         ImageButton info = findViewById(R.id.frutaimg);
-        TextView nom = findViewById(R.id.nombre);
-        ImageButton usu = findViewById(R.id.usuario);
+        ImageButton usu = findViewById(R.id.usuarioimg);
         ImageButton mas = findViewById(R.id.mas);
         ImageButton like = findViewById(R.id.apar);
 
@@ -65,15 +76,6 @@ public class feed extends AppCompatActivity {
             public void onClick(View v) {
                 // Iniciar la actividad Mensajes
                 Intent intent = new Intent(feed.this, logicachat.class);
-                startActivity(intent);
-            }
-        });
-
-        nom.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Iniciar la actividad MisPubli
-                Intent intent = new Intent(feed.this, mispubli.class);
                 startActivity(intent);
             }
         });
